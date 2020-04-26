@@ -9,3 +9,12 @@ Summarize info about partitions and their free/is used space:
 Info about folders'/files' size:
 
     du -h --max-depth=1
+
+
+### View system information
+
+    sudo dmidecode | more
+
+or:
+
+    sudo lshw | more
