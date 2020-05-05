@@ -10,6 +10,9 @@ Info about folders'/files' size:
 
     du -h --max-depth=1
 
+How to print files/folders are sorted by size (in megabytes):
+
+    du -BM --max-depth=1 | sort -r -n
 
 ### View system information
 
