@@ -21,3 +21,7 @@ How to print files/folders are sorted by size (in megabytes):
 or:
 
     sudo lshw | more
+
+### View, which process uses the TCP port
+
+    sudo lsof -i :<port-number>
