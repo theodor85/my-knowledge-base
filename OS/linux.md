@@ -31,14 +31,14 @@ or:
 
 ### Settings for Vim
 
-    [Miguel Grinberg](https://gist.github.com/miguelgrinberg/527bb5a400791f89b3c4da4bd61222e4)
+[Miguel Grinberg's .vimrc](https://gist.github.com/miguelgrinberg/527bb5a400791f89b3c4da4bd61222e4)
 
-    [Alexei Goloburdin](https://gist.github.com/alexey-goloburdin/62d5b1b5ec19275d33497b7f3c0b6eec)
+[Alexei Goloburdin's .vimrc](https://gist.github.com/alexey-goloburdin/62d5b1b5ec19275d33497b7f3c0b6eec)
 
 ## tmux
 
 ### Turn On mouse
 
-I file `~/.tmux.conf` add string:
+In file `~/.tmux.conf` add string:
 
     set -g mouse on
