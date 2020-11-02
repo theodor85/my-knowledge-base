@@ -42,3 +42,12 @@ or:
 In file `~/.tmux.conf` add string:
 
     set -g mouse on
+
+
+## genisoimage (Ubuntu) - creating bootable ISO-image from directiry
+
+```bash
+genisoimage -r -V "ISO-LABEL" -cache-inodes -J -l \
+-b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot \
+-boot-load-size 4 -boot-info-table -o NAME-OF-ISO.iso ISOTMP
+```
