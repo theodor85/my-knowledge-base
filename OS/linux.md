@@ -51,3 +51,9 @@ genisoimage -r -V "ISO-LABEL" -cache-inodes -J -l \
 -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot \
 -boot-load-size 4 -boot-info-table -o NAME-OF-ISO.iso ISOTMP
 ```
+
+## How to write iso-image to flash with dd
+
+```bash
+sudo dd if=/path/to/image.iso of=/dev/sdb1
+```
