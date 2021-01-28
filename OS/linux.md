@@ -1,6 +1,25 @@
-## Working on Linux
+# Working on Linux
 
-### How to know about disks usage
+[How to know about disks usage](#how-to-know-about-disks-usage)
+
+[View system information](#view-system-information)
+
+[View, which process uses the TCP port](#view-which-process-uses-the-TCP-port)
+
+[Vim](#vim)
+
+&nbsp;&nbsp;&nbsp;&nbsp;[Settings for Vim](#settings-for-vim)
+
+[Tmux](#tmux)
+
+&nbsp;&nbsp;&nbsp;&nbsp;[Turn on mouse](#turn-on-mouse)
+
+[Genisoimage](#genisoimage)
+
+[How to write iso-image to flash with dd](#how-to-write-iso-image-to-flash-with-dd)
+
+
+## How to know about disks usage
 
 Summarize info about partitions and their free/is used space:
 
@@ -14,7 +33,7 @@ How to print files/folders are sorted by size (in megabytes):
 
     du -BM --max-depth=1 | sort -r -n
 
-### View system information
+## View system information
 
     sudo dmidecode | more
 
@@ -22,7 +41,7 @@ or:
 
     sudo lshw | more
 
-### View, which process uses the TCP port
+## View, which process uses the TCP port
 
     sudo lsof -i :<port-number>
 
@@ -37,14 +56,16 @@ or:
 
 ## tmux
 
-### Turn On mouse
+### Turn on mouse
 
 In file `~/.tmux.conf` add string:
 
     set -g mouse on
 
 
-## genisoimage (Ubuntu) - creating bootable ISO-image from directiry
+## genisoimage 
+
+Ubuntu: creating bootable ISO-image from directiry
 
 ```bash
 genisoimage -r -V "ISO-LABEL" -cache-inodes -J -l \
@@ -52,7 +73,7 @@ genisoimage -r -V "ISO-LABEL" -cache-inodes -J -l \
 -boot-load-size 4 -boot-info-table -o NAME-OF-ISO.iso ISOTMP
 ```
 
-## How to write iso-image to flash with dd
+## How to write iso image to flash with dd
 
 ```bash
 sudo dd if=/path/to/image.iso of=/dev/sdb1
